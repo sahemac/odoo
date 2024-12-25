@@ -124,7 +124,7 @@ services:
     depends_on:
       - postgres
     ports:
-      - "$ODOO_PORT:8069"
+      - "$ODOO_PORT:8077"
     volumes:
       - ./config:/etc/odoo
       - ./extra-addons:/mnt/extra-addons
