@@ -11,6 +11,9 @@
 #- Saisir la commande d'attribution des droits : chmod +x docker_desktop_deploy_odoo_emac.sh
 #- Ensuite saisir la commande pour lancer le script : ./odoo_bot.sh
 #- Tu vas renseigner tes différents paramètres au fur et à mésure pour personnaliser ton installation.
+#- tu dois verifier le port Odoo personnalisé que tu crée qu'il soit :
+# - configuré sur ton VPC de Google Cloud 
+# - Configuré en $ODOO_PORT dans le fichier d'execution , le même port sera attribué a xmlhttp_rpc dans le fichier config  et dans le docker file $ODOO_PORT = $ODOO_PORT 
 
 #--------------------------- Gestion erreur d'installation ----------------------------------------------------
 # - Erreur de connectivité entre le conteneur Odoo et Postgresql : verifier les configuration réseau
